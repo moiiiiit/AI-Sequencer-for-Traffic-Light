@@ -91,15 +91,15 @@ class State:
 
     def printLights(self):
         print("\nTime Stamp " + str(timeElapsed))
-        print("\nNorth Light: " + str(self.nLight))
-        print("South Light: " + str(self.sLight))
-        print("East Light: " + str(self.eLight))
-        print("West Light: " + str(self.wLight))
+        print("\nNorth Light: " + ("Green" if self.nLight==1 else "Red"))
+        print("South Light: " + ("Green" if self.sLight==1 else "Red"))
+        print("East Light: " + ("Green" if self.eLight==1 else "Red"))
+        print("West Light: " + ("Green" if self.wLight==1 else "Red"))
 
-        print("\nNorth Arrow: " + str(self.nArrow))
-        print("South Arrow: " + str(self.sArrow))
-        print("East Arrow: " + str(self.eArrow))
-        print("West Arrow: " + str(self.wArrow))
+        print("\nNorth Arrow: " + ("Green" if self.nArrow==1 else "Red"))
+        print("South Arrow: " + ("Green" if self.sArrow==1 else "Red"))
+        print("East Arrow: " + ("Green" if self.eArrow==1 else "Red"))
+        print("West Arrow: " + ("Green" if self.wArrow==1 else "Red"))
         print(
             "\n=================================")
 
